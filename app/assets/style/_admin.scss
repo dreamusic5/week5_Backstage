@@ -1,0 +1,28 @@
+// 表頭
+// icon
+.main-header{
+    .icon-add{
+        color: $success;
+    }
+    .add-new{
+        &:hover{
+            color: $success;
+        }
+    }
+    // 表格
+    .main-table{
+        margin-bottom: 64px;
+    }
+    .icon{
+        padding-left: 25px;
+        &:hover{
+            color: $success;
+        }
+    }
+    
+    
+}
+.icon-select{
+    color: $success;
+    font-size: 16px;
+}

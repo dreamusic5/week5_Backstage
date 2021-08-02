@@ -1,0 +1,31 @@
+// 字體
+body{
+    font-family: 'Lato', 'Roboto Mono', monospace ,sans-serif, /* 頁面字體 */
+                -apple-system, BlinkMacSystemFont,     /* 蘋果系統字 */
+                "Segoe UI", "Microsoft JhengHei",      /* Windows */
+                Roboto, Ubunto,                              /* Android、Linux */
+                "Helvetica Neue", Arial, sans-serif;         /* 通用字體 */
+    color: $primary;
+    line-height: 1.5;
+}
+
+/* 盒模型預設 */
+*,*:before*:after{
+	box-sizing: border-box;
+}
+
+/* 消除圖片空隙 、圖片自適應父層*/
+img{
+	vertical-align:middle;
+	max-width:100%;
+	height:auto;
+}
+
+// a標籤
+a{
+    text-decoration: none;
+    color: $primary;
+    &:hover{
+        color: $primary;
+    }
+}
