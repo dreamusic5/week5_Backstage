@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Lato", "Roboto Mono", monospace, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, Ubunto, "Helvetica Neue", Arial, sans-serif;
+  /* 通用字體 */
+  color: #212529;
+  line-height: 1.5; }
+
+/* 盒模型預設 */
+*, *:before*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* 消除圖片空隙 、圖片自適應父層*/
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #212529; }
+  a:hover {
+    color: #212529; }
+
+.fz-1 {
+  font-size: 12px; }
+
+.fz-2 {
+  font-size: 14px; }
+
+.fz-3 {
+  font-size: 16px; }
+
+.fz-4 {
+  font-size: 24px; }
+
+font-bold {
+  font-weight: bold; }
+
+.mb-1 {
+  margin-bottom: 8px; }
+
+.mb-2 {
+  margin-bottom: 16px; }
+
+.mb-3 {
+  margin-bottom: 24px; }
+
+.mb-4 {
+  margin-bottom: 32px; }
+
+.mb-5 {
+  margin-bottom: 40px; }
+
+.mb-6 {
+  margin-bottom: 48px; }
+
+.mr-1 {
+  margin-right: 8px; }
+
+.mr-2 {
+  margin-right: 16px; }
+
+.mr-3 {
+  margin-right: 24px; }
+
+.mr-4 {
+  margin-right: 32px; }
+
+.mr-5 {
+  margin-right: 40px; }
+
+.mr-6 {
+  margin-right: 48px; }
+
+.border-bottom {
+  border-bottom: 1px solid #CED4DA; }
+
+.mt-minus {
+  margin-top: -1px; }
+
+header {
+  width: 23%;
+  padding: 32px 0 32px 0;
+  color: #212529; }
+  header h1 {
+    padding-left: 32px; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+  .container-fluid:hover {
+    background-color: #CED4DA; }
+  .container-fluid:active {
+    border-left: 4px solid #198754;
+    color: #198754; }
+  .container-fluid a {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 0px 5px 32px;
+    margin-right: 0; }
+
+.member {
+  padding-left: 32px; }
+  .member img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 24px; }
+  .member .member-name {
+    margin-bottom: 4px; }
+  .member .member-email {
+    color: #6C757D;
+    margin-bottom: 0; }
+
+.main {
+  width: 77%;
+  padding: 32px; }
+
+.main-header {
+  margin-bottom: 44px; }
+  .main-header .form-select {
+    border: 0px; }
+  .main-header .material-icons {
+    font-size: 24px;
+    /* Preferred icon size */
+    margin-left: 26px;
+    color: #212529; }
+
+.main-content-left {
+  width: 34%; }
+  .main-content-left .icon-arrow-down {
+    color: #198754;
+    margin-bottom: 6px; }
+  .main-content-left .main-content-left-item li {
+    border: 1px solid #CED4DA; }
+    .main-content-left .main-content-left-item li:first-child {
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px; }
+    .main-content-left .main-content-left-item li:last-child {
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px; }
+    .main-content-left .main-content-left-item li a {
+      padding: 12px; }
+    .main-content-left .main-content-left-item li:hover {
+      background-color: #F8F9FA; }
+  .main-content-left .main-content-left-item .item-selected {
+    background-color: #F8F9FA; }
+  .main-content-left .main-content-left-item .name {
+    color: #6C757D; }
+  .main-content-left .main-content-left-item .subtitle, .main-content-left .main-content-left-item .time {
+    margin-bottom: 4px; }
+
+.main-content-right {
+  width: 63%; }
+  .main-content-right .main-content-right-number {
+    text-align: right;
+    color: #6C757D;
+    line-height: 2; }
+  .main-content-right .main-content-right-title {
+    padding: 12px;
+    border: 1px solid #CED4DA;
+    background-color: #F8F9FA;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; }
+    .main-content-right .main-content-right-title .subtitle {
+      margin-bottom: 4px; }
+  .main-content-right .main-content-right-content {
+    padding: 16px;
+    border: 1px solid #CED4DA;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; }
+  .main-content-right img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 24px; }
+  .main-content-right .item-title {
+    margin-bottom: 4px; }
+  .main-content-right .item-time {
+    color: #6C757D; }
+  .main-content-right .code {
+    color: #198754;
+    background-color: #F8F9FA;
+    font-family: "Roboto Mono"; }
+  .main-content-right .information {
+    width: 88%; }
+  .main-content-right .btn-download {
+    border-radius: 2px;
+    background-color: #F8F9FA;
+    border: 1px solid #CED4DA;
+    max-width: 176px; }
+    .main-content-right .btn-download a {
+      padding: 8px 0; }
+    .main-content-right .btn-download p {
+      margin-right: 4px; }
+    .main-content-right .btn-download:hover {
+      background-color: #CED4DA; }
+
+.icons:hover {
+  color: #198754; }
+
+.main-header .icon-add {
+  color: #198754; }
+
+.main-header .add-new:hover {
+  color: #198754; }
+
+.main-header .main-table {
+  margin-bottom: 64px; }
+
+.main-header .icon {
+  padding-left: 25px; }
+  .main-header .icon:hover {
+    color: #198754; }
+
+.icon-select {
+  color: #198754;
+  font-size: 16px; }
+
+/*# sourceMappingURL=all.css.map */

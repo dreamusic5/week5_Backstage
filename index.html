@@ -1,10 +1,80 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <!-- google字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- google icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!-- 自己的CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <header class="header bg-light d-flex flex-column justify-content-between">
+      <nav class="navbar navbar-light bg-light fz-3 font-bold">
+        <h1 class="logo mb-4"><a href="#">
+          <img src="./assets/images/logo-ANSWER.svg" alt="ANSWER logo">
+        </a></h1>
+        <div class="container-fluid mb-3">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/black-24dp/2x/baseline_assessment_black_24dp.png" alt="" width="24" height="24" class="d-inline-block align-text-top mr-2">
+            Dashboard
+          </a>
+        </div>
+        <div class="container-fluid mb-2">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/question/2x/baseline_question_answer_black_24dp.png" alt="" width="24" height="24" class="d-inline-block align-text-top mr-2">
+            Question
+          </a>
+        </div>
+        <div class="container-fluid mb-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/Assignment/2x/baseline_assignment_black_24dp.png" alt="" width="24" height="24" class="d-inline-block align-text-top mr-2">
+            Assignment
+          </a>
+        </div>
+        <div class="container-fluid mb-3">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/Course/2x/baseline_video_library_black_24dp.png" alt="" width="24" height="24" class="d-inline-block align-text-top mr-2">
+            Course
+          </a>
+        </div>
+        <div class="container-fluid mb-3">
+          <a class="navbar-brand" href="admin.html">
+            <img src="./assets/images/Admin/2x/baseline_group_black_24dp.png" alt="" width="24" height="24" class="d-inline-block align-text-top mr-2">
+            Admin
+          </a>
+        </div>
+        <div class="container-fluid mb-3">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/Settings/2x/baseline_settings_black_24dp.png" alt="" width="24" height="24" class="d-inline-block align-text-top mr-2">
+            Settings
+          </a>
+        </div>
+      </nav>
+      <div class="member d-flex  align-items-center">
+        <img src="./assets/images/andychen.jpeg" alt="andy 登入照片" class="mr-2">
+        <div class="member-content">
+          <p class="fz-3 member-name font-bold">Andy Chen</p>
+          <p class="fz-2 member-email">andy0401@mail.com</p>
+        </div>
+      </div>
+    </header>
+  
+    
 <div class="main">
   <!-- 表頭 -->
   <div class="main-header d-flex justify-content-between">
@@ -166,3 +236,14 @@ current: index
   </div>
 </div>
 
+
+  </div>
+  
+  <!-- 自己的JS -->
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+
+</html>
